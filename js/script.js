@@ -30,8 +30,21 @@ const enterBtn = document.querySelector(".modal-content__form__btn-wrapper__ente
 enterBtn.addEventListener("click", () => {
     const nameInput = document.querySelector(".modal-content__form__name__firsname#name");
     const surnameInput = document.querySelector(".modal-content__form__name__firsname#surename");
+		const phoneInput = document.querySelector(".modal-content__form__phone#phone");
+		const cityInput = document.querySelector(".modal-content__form__name__city#city");
+		const zipInput = document.querySelector(".modal-content__form__name__zip#zip");
     const name = nameInput.value;
     const surname = surnameInput.value;
-    console.log (`Имя: ${name}, Фамилия: ${surname}`);
+		const phone = phoneInput.value;
+		const city = cityInput.value;
+		const zip = zipInput.value;
+    console.log (`
+Имя: ${name}, 
+Фамилия: ${surname},
+Номер телефона: ${phone},
+Город проживания: ${city},
+Индекс: ${zip}.
+`);
     closeModal(null, false);
   });
+

@@ -54,12 +54,22 @@
    margin-top: 18px;
 }
 
-.modal-content__form__name__firsname {
+.modal-content__form__name__firsname,
+.modal-content__form__phone,
+.modal-content__form__name__city,
+.modal-content__form__name__zip {
    padding: 14px;
    background: #d7e2f6;
    border: none;
    border-radius: 10px;
    width: 50%;
+}
+
+.modal-content__form__phone,
+.modal-content__form__name__city,
+.modal-content__form__name__zip {
+   margin-top: 5px;
+   width: 100%;
 }
 
 .modal-content__form__btn-wrapper__enter {
