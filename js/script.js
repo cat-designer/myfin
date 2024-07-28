@@ -24,3 +24,14 @@ openBtns.forEach((btn) => {
 
 modal.addEventListener("click", (e) => closeModal(e, true));
 closeBtn.addEventListener("click", () => closeModal(null, false));
+
+const enterBtn = document.querySelector(".modal-content__form__btn-wrapper__enter");
+
+enterBtn.addEventListener("click", () => {
+    const nameInput = document.querySelector(".modal-content__form__name__firsname#name");
+    const surnameInput = document.querySelector(".modal-content__form__name__firsname#surename");
+    const name = nameInput.value;
+    const surname = surnameInput.value;
+    console.log(Имя: ${name}, Фамилия: ${surname});
+    closeModal(null, false);
+  });
