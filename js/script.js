@@ -32,6 +32,6 @@ enterBtn.addEventListener("click", () => {
     const surnameInput = document.querySelector(".modal-content__form__name__firsname#surename");
     const name = nameInput.value;
     const surname = surnameInput.value;
-    console.log(Имя: ${name}, Фамилия: ${surname});
+    console.log (`Имя: ${name}, Фамилия: ${surname}`);
     closeModal(null, false);
   });
