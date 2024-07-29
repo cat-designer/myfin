@@ -85,7 +85,7 @@
 }
 
 @media (max-width: 768px) {
-	.modal-wrapper {
-		width: 300px;
-	}
+   .modal-wrapper {
+      width: 300px;
+   }
 }
