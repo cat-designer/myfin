@@ -1,4 +1,4 @@
-@import url('modal.css');
+@import url("modal.css");
 
 * {
    box-sizing: border-box;
@@ -38,6 +38,10 @@ a {
 
 .table-header {
    border-left: 0;
+}
+
+.table-body__raw__credit__media {
+   display: none;
 }
 
 .table-body__raw-wrapper:hover {
@@ -103,4 +107,69 @@ a {
 
 .button-order:active {
    background-color: #f88000;
+}
+
+@media (max-width: 990px) {
+   .table-body__raw-wrapper {
+      align-items: start;
+   }
+   .table-header {
+      display: none;
+   }
+
+   .table-body__raw-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 80vw;
+      margin-bottom: 20px;
+   }
+
+   .table-body__raw__credit {
+      border: solid #ebebeb;
+      border-width: 1px 0px 1px;
+      width: 100%;
+   }
+
+   .table-body__raw__percent,
+   .table-body__raw__period {
+      display: none;
+   }
+
+   .table-body__raw__credit__media {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-gap: 50px;
+      align-items: center;
+   }
+
+   .table-parent__header {
+      padding-top: 20px;
+      padding-left: 30px;
+      background-color: #fff;
+   }
+
+   .table-parent__header {
+      text-align: start;
+   }
+
+   .table-body__raw__percent__media,
+   .table-body__raw__credit__media {
+      font-weight: 700;
+   }
+
+   .table-body__raw__credit {
+      background-color: #f1fbff;
+   }
+}
+
+@media (max-width: 480px) {
+   .table-body__raw__credit__media {
+      grid-template-columns: 130px 1fr;
+      grid-gap: 20px;
+   }
+
+	 .table-body__raw__buttons {
+		display: flex;
+		width: 100%;
+	 }
 }

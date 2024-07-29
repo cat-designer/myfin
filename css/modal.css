@@ -83,3 +83,9 @@
    font-weight: 500;
    cursor: pointer;
 }
+
+@media (max-width: 768px) {
+	.modal-wrapper {
+		width: 300px;
+	}
+}
